@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New romsan',cursive;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 12.5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    background: black;
+}
+
+.navber a{
+    position: relative;
+    font-size: 16px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+
+}
+
+.navber a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: aliceblue;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.navber a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.serch-bar{
+    width:250px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.serch-bar input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: aliceblue;
+    padding-left: 10px;
+}
+
+.serch-bar input::placeholder{
+    color: aliceblue;
+}
+
+.serch-bar button{
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.serch-bar button i{
+    font-size: 22px;
+    color: aliceblue;
+
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background: url('mode.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: 550px;
+    background: url('file:///C:/Users/sukan/Downloads/mode.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.container .content{
+    position: absolute;
+    top: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding: 80px;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.logo{
+    color: aquamarine;
+    font-family: 'Brush script MT',cursive;
+}
+
+.logox{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-api h2{
+    font-size: 40px;
+    font-family:'Times New Roman', serif;
+    color: rgb(228, 211, 189);
+}
+
+.text-api h2 span{
+    font-size: 25px;
+    line-height: 1;
+}
+
+.social-icons a i{
+    font-size: 22px;
+    color: #e4e4e4;
+    margin-right: 10px;
+    transition: .5s ease;
+    border-radius: 5px;
+}
+
+.social-icons a:hover i{
+    transform: scale(1.2);
+    transition: 1s;
+    background-color: rgb(56, 46, 41);
+}
+
+.container .logreg-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;  
+}
+
+.logreg-box .from-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #e4e4e4;
+}
+
+.from-box h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+.from-box .input-box{
+    position: relative;
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #e4e4e4;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: aquamarine;
+    font-weight: 500;
+    padding-right: 23px;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+
+.from-box .remember{
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember label input{
+    accent-color: #e4e4e4e4;
+    margin-right: 3px;
+}
+
+.remember a{
+    color: #e4e4e4;
+    text-decoration: none;
+}
+
+.remember a:hover{
+    text-decoration: underline;
+    color: darkturquoise;
+    transition: 1s;
+}
+
+.btn{
+    width: 100%;
+    height: 40px;
+    background: rgb(255, 109, 109);
+    border: 2px;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #e4e4e4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, -5);
+    transition: 1s;
+}
+
+.btn:hover{
+    color: rgb(32, 29, 29);
+    transition: 1s;
+}
+
+.from-box .login-register{
+    font-size: 14.5px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.login-register p a{
+    color: #e4e4e4;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+.login-register a:hover{
+    text-decoration: underline;
+    color: darkturquoise;
+    transition: 1s;
+}
